@@ -4,31 +4,36 @@
 :root {
   /* Backgrounds */
   --background: #ffffffa7;
-  --card: #F8FAFC;
+  --card: #f8fafc;
 
-  --bg: #1A1A1A;
+  --bg: #1a1a1a;
 
+  --bg2: #f5f5f5;
   /* Text */
   --text-primary: #111827;
-  --text-secondary: #6B7280;
+  --text-secondary: #6b7280;
 
   /* Accent */
-  --primary: #2563EB;
+  --primary: #2563eb;
 
   /* Status */
-  --success: #16A34A;
-  --warning: #F59E0B;
-  --danger: #DC2626;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
 }
 
-
-
-
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--bg);
+body {
+  background: var(--bg);
 }
 
+.topbar{
+  background: var(--bg2);
+}
+
+/* #desktop {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
