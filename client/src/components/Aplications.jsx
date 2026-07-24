@@ -2,6 +2,7 @@
 
 import openFolder from "../assets/open-folder.png";
 
+// this is represent the application which will be display on the screen
 const Application = ({  title }) => {
   const ApplicationIcons = {
     desktop: openFolder
@@ -18,4 +19,5 @@ const Application = ({  title }) => {
     </div>
   );
 };
+
 export default Application;

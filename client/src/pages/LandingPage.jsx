@@ -1,21 +1,17 @@
 
 "use strict"
-import {useState} from "react";
-import { useNavigate } from 'react-router-dom';
 
-const LandingPage = () => {
-
-    const navigate = useNavigate();
+const LandingPage = ({setUserLogged}) => {
 
     const handleClick = () =>{
-
         setTimeout(() => {
-            navigate('/mainSpace');
+            const userLogged = localStorage.getItem('userLogged');
+            (userLogged)? setUserLogged(true): setUserLogged(false);
         }, 300);
     }
 
     return (
-        <div className="animate-page-enter text-white flex flex-col items-center gap-5">
+        <div className="text-white flex flex-col h-screen justify-center items-center gap-5">
             <h1 className="text-xl font-bold">
                 Hello, from <span className="text-yellow-400">Harmin</span>
              </h1>
